@@ -1,0 +1,156 @@
+/* CSS RESET*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* justify-content: center; */
+    font-family: 'Bree Serif', serif;
+}
+
+/* logo and image */
+#logo{
+    margin: 34px 45px;
+}
+#logo img{
+    /* height: 54px; */
+    margin: -11px -28px;
+    width: 93px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+display: block;
+padding: 3px 33px;
+border-radius: 20px;
+text-decoration: none;
+
+}
+#navbar ul li a:hover{
+ color: black;
+ background-color: white;
+ padding: 6px;
+ margin: 5px;
+ border-radius: 40px;
+ display: block;
+}
+/* background { color and image} */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+}
+/* list and styling */
+
+/* HOME SECTION */
+#home{
+    display: flex;
+    flex-direction: column;
+    /* padding: 3px 200px; */
+    justify-content: center;
+    align-items: center;
+    /* height: 653px; */
+    height: 370px;
+    /* height: 227px; */
+    top: 0%;
+    left: 0%;
+}
+
+/* home background */
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('./background.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+/* heading and paragraph styling  */
+.h-primary{   
+/* we create this class because if we want to built a same height and same padding (etc) heading then we can do it
+ by adding more class for ex: .h-primary, .h-primary2{....} */
+    font-size: 4.2rem;
+    padding: 12px;
+    margin: 20px;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    /* font-family: 'Bree Serif', serif; */
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+    margin: 20px;
+    padding: 10px 7px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* sevices-section */
+#service_heading{
+    /* padding: -40px 5px; */
+    margin: 180px;
+    background-color: aqua;
+    height: 0px;
+}
+.h-primary-centre{
+    height: 205px;
+    /* display: flex; */
+    text-align: center;
+    font-size: 3.5rem;
+    /* align-content: center; */
+}
+#services{
+    display: flex;
+    margin: 34px;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: rgb(201, 188, 188);
+   
+}
+#services .box img{
+    height: 159px;
+    display: block;
+    margin: auto;
+}
